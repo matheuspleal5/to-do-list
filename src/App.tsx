@@ -1,6 +1,17 @@
+import './global.css';
+
+import styles from './App.module.css'
+import { Header } from './components/Header';
+import { SearchToDo } from './components/SearchToDo';
+
 export function App() {
 
   return (
-    <h1>Hello</h1>
+    <>
+      <Header />
+      <div className={styles.container}>
+        <SearchToDo />
+      </div>
+    </>
   )
 }
